@@ -1987,17 +1987,6 @@ F 3 "" H 9150 5900 50  0001 C CNN
 	1    9150 5900
 	1    0    0    -1  
 $EndComp
-$Comp
-L C C27
-U 1 1 5A494C17
-P 8850 5650
-F 0 "C27" H 8875 5750 50  0000 L CNN
-F 1 "100nF" H 8600 5550 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603" H 8888 5500 50  0001 C CNN
-F 3 "" H 8850 5650 50  0001 C CNN
-	1    8850 5650
-	-1   0    0    1   
-$EndComp
 Text Label 8150 5450 0    59   ~ 0
 VBAT_SENSE
 $Comp
@@ -2619,17 +2608,9 @@ Wire Wire Line
 	5600 2450 5600 2500
 Wire Wire Line
 	5350 2450 5350 2500
-Connection ~ 8850 5450
 Connection ~ 9150 5450
 Wire Wire Line
-	8850 5450 8850 5500
-Connection ~ 9150 5850
-Wire Wire Line
 	9150 5800 9150 5900
-Wire Wire Line
-	8850 5850 9150 5850
-Wire Wire Line
-	8850 5800 8850 5850
 Wire Wire Line
 	9550 5450 9500 5450
 Wire Wire Line
@@ -3504,17 +3485,7 @@ Connection ~ 12950 2100
 Wire Wire Line
 	12050 2450 12050 2550
 Wire Wire Line
-	11050 2450 12050 2450
-Connection ~ 11100 2450
-Wire Wire Line
-	11100 2350 11100 2450
-Wire Wire Line
-	11100 2050 11100 1950
-Wire Wire Line
-	11050 1950 12150 1950
-Wire Wire Line
 	12150 1950 12150 2550
-Connection ~ 11100 1950
 Wire Wire Line
 	10700 1950 10700 2450
 Wire Wire Line
@@ -3645,4 +3616,14 @@ F 3 "" H 11600 7800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11450 7300 11450 7250
+Wire Wire Line
+	12050 2450 11050 2450
+Wire Wire Line
+	11050 1950 12150 1950
+Wire Wire Line
+	11100 2050 11100 1950
+Connection ~ 11100 1950
+Wire Wire Line
+	11100 2350 11100 2450
+Connection ~ 11100 2450
 $EndSCHEMATC
