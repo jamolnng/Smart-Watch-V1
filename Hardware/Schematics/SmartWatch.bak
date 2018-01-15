@@ -719,7 +719,7 @@ SPI_MOSI
 Text GLabel 8350 4750 2    59   Output ~ 0
 BT_REQN
 Text GLabel 8350 4850 2    59   Output ~ 0
-BT_SCK
+SPI_SCK
 Text GLabel 8350 4950 2    59   Input ~ 0
 BT_RDYN
 Text GLabel 8350 5050 2    59   Output ~ 0
