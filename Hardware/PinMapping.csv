@@ -6,64 +6,64 @@ Physical Pin #,Full Pin Name,Pin Function,,PPS,,,Notes
 5,AN13/C1INC/RPG7/SDA4/PMA4/RG7,BAT_STAT1,Battery status pin 1,RPF4R,0000,41,
 6,AN12/C2IND/RPG8/SCL4/PMA3/RG8,BAT_STAT2,Battery status pin 2,RPF5R,0000,42,
 7,VSS,AMB_LIGHT,Ambient light analog input,RPB0R,0000,16,Analog/Do I really need this?
-8,VDD,BT_RDYN,ACI device ready indication,RPB7R,0000,18,Bluetooth: to figure out function
+8,VDD,BT_RDYN,ACI device ready indication,RPB8R,0000,21,Bluetooth: to figure out function
 9,MCLR,BTN1,Button 1 input,PRB6R,0000,17,Do I really need these?
-10,AN11/C2INC/RPG9/PMA2/RG9,BTN2,Button 2 input,RPB8R,0000,21,
+10,AN11/C2INC/RPG9/PMA2/RG9,BTN2,Button 2 input,RPB7R,0000,18,
 11,AN45/C1INA/RPB5/RB5,VBAT_SENSE,Battery voltage sense,×,×,22,Analog (AN49/RB9)
-12,AN4/C1INB/RB4,,,,,,
-13,AN3/C2INA/RPB3/RB3,Output,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
-14,AN2/C2INB/RPB2/RB2,BAT_CE,Battery charge enable,RPB15R,0000,30,
-15,PGEC1/VREF-/CVREF-/AN1/RPB1/RB1,MotorPWM,Vibration Motor PWM,RPG7R,1011,5,
-16,PGED1/VREF+/CVREF+/AN0/RPB0/PMA6/RB0,LCD_LED-A,LCD Backlight Anode (PWM),RPG8R,1011,6,
-17,PGEC2/AN46/RPB6/RB6,LCD_RESET,LCD Active LOW Reset,RPG9R,0000,10,
-18,PGED2/AN47/RPB7/RB7,LCD_DC,LCD Data / Command selection,RPB5R,0000,11,
-19,AVDD,BT_REQN,ACI request pin,RPB4R,0000,12,Bluetooth: to figure out function
-20,AVSS,BT_RESET,Active LOW Reset Bluetooth,RPB2R,0000,14,
-21,AN48/RPB8/PMA10/RB8,LED1,LED 1,RPB10R,0000,23,"Do I really need these?
+12,AN4/C1INB/RB4,T_INT,Touch Cont. Interrupt,RPF0R,0000,56,
+13,AN3/C2INA/RPB3/RB3,,,,,,
+14,AN2/C2INB/RPB2/RB2,Output,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
+15,PGEC1/VREF-/CVREF-/AN1/RPB1/RB1,BAT_CE,Battery charge enable,RPB15R,0000,30,
+16,PGED1/VREF+/CVREF+/AN0/RPB0/PMA6/RB0,MotorPWM,Vibration Motor PWM,RPG7R,1011,5,
+17,PGEC2/AN46/RPB6/RB6,LCD_LED-A,LCD Backlight Anode (PWM),RPG8R,1011,6,
+18,PGED2/AN47/RPB7/RB7,LCD_RESET,LCD Active LOW Reset,RPG9R,0000,10,
+19,AVDD,LCD_DC,LCD Data / Command selection,RPB5R,0000,11,
+20,AVSS,BT_REQN,ACI request pin,RPB4R,0000,12,Bluetooth: to figure out function
+21,AN48/RPB8/PMA10/RB8,BT_RESET,Active LOW Reset Bluetooth,RPB2R,0000,14,
+22,AN49/RPB9/PMA7/RB9,LED1,LED 1,RPB10R,0000,23,"Do I really need these?
 (RB11 Not PPS)"
-22,AN49/RPB9/PMA7/RB9,LED2,LED 2,×,×,24,
-23,TMS/CVREFOUT/AN5/RPB10/PMA13/RB10,,,,,,
-24,TDO/AN6/PMA12/RB11,SPI,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
-25,VSS,SPI_SCK,SPI Clock,×,×,4,"SPI 2
+23,TMS/CVREFOUT/AN5/RPB10/PMA13/RB10,LED2,LED 2,×,×,24,
+24,TDO/AN6/PMA12/RB11,,,,,,
+25,VSS,SPI,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
+26,VDD,SPI_SCK,SPI Clock,×,×,4,"SPI 2
 (pg. 26)"
-26,VDD,SPI_MOSI,SPI MOSI,SDI2R,0101,13,
-27,TCK/AN7/PMA11/RB12,SPI_MISO,SPI MISO,RPB3R,0110,15,
-28,TDI/AN8/RB13,,,,,,
-29,AN9/RPB14/SCK3/PMA1/RB14,I²C,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
-30,AN10/EMDC/AEMDC/RPB15/OCFB/PMA0/RB15,I2C_SCL,I²C Clock (SCL),×,×,44,"I²C 1
+27,TCK/AN7/PMA11/RB12,SPI_MOSI,SPI MOSI,SDI2R,0101,13,
+28,TDI/AN8/RB13,SPI_MISO,SPI MISO,RPB3R,0110,15,
+29,AN9/RPB14/SCK3/PMA1/RB14,,,,,,
+30,AN10/EMDC/AEMDC/RPB15/OCFB/PMA0/RB15,I²C,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
+31,OSC1/CLKI/RC12,I2C_SCL,I²C Clock (SCL),×,×,44,"I²C 1
 (pg. 27)"
-31,OSC1/CLKI/RC12,I2C_SDA,I²C Data (SDA),×,×,43,
-32,OSC2/CLKO/RC15,,,,,,
-33,VBUS,PMP,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
-34,VUSB3v3,LCD_D0,LCD Data 0,×,×,58,
-35,VSS,LCD_D1,LCD Data 1,×,×,61,
-36,D-,LCD_D2,LCD Data 2,×,×,62,
-37,D+,LCD_D3,LCD Data 3,×,×,63,
-38,RPF3/USBID/RF3,LCD_D4,LCD Data 4,×,×,64,
-39,VDD,LCD_D5,LCD Data 5,×,×,1,
-40,VSS,LCD_D6,LCD Data 6,×,×,2,
-41,RPF4/SDA5/PMA9/RF4,LCD_D7,LCD Data 7,×,×,3,
-42,RPF5/SCL5/PMA8/RF5,LCD_WR,LCD Active LOW Write signal,×,×,52,
-43,AERXD0/ETXD2/RPD9/SDA1/PMCS2/PMA15/RD9,LCD_RD,LCD Active LOW Read signal,×,×,53,Will use on rev 1 because software might need to read from screen
-44,ECOL/RPD10/SCL1/SCK4/RD10,,,,,,
+32,OSC2/CLKO/RC15,I2C_SDA,I²C Data (SDA),×,×,43,
+33,VBUS,,,,,,
+34,VUSB3v3,PMP,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
+35,VSS,LCD_D0,LCD Data 0,×,×,58,
+36,D-,LCD_D1,LCD Data 1,×,×,61,
+37,D+,LCD_D2,LCD Data 2,×,×,62,
+38,RPF3/USBID/RF3,LCD_D3,LCD Data 3,×,×,63,
+39,VDD,LCD_D4,LCD Data 4,×,×,64,
+40,VSS,LCD_D5,LCD Data 5,×,×,1,
+41,RPF4/SDA5/PMA9/RF4,LCD_D6,LCD Data 6,×,×,2,
+42,RPF5/SCL5/PMA8/RF5,LCD_D7,LCD Data 7,×,×,3,
+43,AERXD0/ETXD2/RPD9/SDA1/PMCS2/PMA15/RD9,LCD_WR,LCD Active LOW Write signal,×,×,52,
+44,ECOL/RPD10/SCL1/SCK4/RD10,LCD_RD,LCD Active LOW Read signal,×,×,53,Will use on rev 1 because software might need to read from screen
 45,AERXCLK/AEREFCLK/ECRS/RPD11/PMCS1/PMA14/RD11,,,,,,
-46,AERXD1/ETXD3/RPD0/RTCC/INT0/RD0,USB,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
-47,SOSCI/RPC13/RC13,D+,,×,×,37,
-48,SOSCO/RPC14/T1CK/RC14,D-,,×,×,36,
-49,EMDIO/AEMDIO/RPD1/SCK1/RD1,,,,,,
-50,ETXERR/AETXEN/RPD2/SDA3/RD2,ICSP,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
-51,AERXERR/ETXCLK/RPD3/SCL3/RD3,MCLR,,×,×,9,Programming Pins
-52,SQICS0/RPD4/PMWR/RD4,PGD,,×,×,16,
-53,SQICS1/RPD5/PMRD/RD5,PGC,,×,×,15,
-54,VDD,,,,,,
-55,VSS,INTERRUPTS,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
-56,ERXD3/AETXD1/RPF0/RF0,INT0,UNUSED,×,×,×,
-57,TRCLK/SQICLK/ERXD2/AETXD0/RPF1/RF1,INT1,,INT1R,0011,46,
-58,TRD0/SQID0/ERXD1/PMD0/RE0,INT2,UNUSED,×,×,×,
-59,VSS,INT3,,INT3R,0000,50,
-60,VDD,INT4,,INT4R,0000,51,
-61,TRD1/SQID1/ERXD0/PMD1/RE1,,,,,,
-62,TRD2/SQID2/ERXDV/ECRSDV/AECRSDV/PMD2/RE2,,,,,,
+46,AERXD1/ETXD3/RPD0/RTCC/INT0/RD0,,,,,,
+47,SOSCI/RPC13/RC13,USB,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
+48,SOSCO/RPC14/T1CK/RC14,D+,,×,×,37,
+49,EMDIO/AEMDIO/RPD1/SCK1/RD1,D-,,×,×,36,
+50,ETXERR/AETXEN/RPD2/SDA3/RD2,,,,,,
+51,AERXERR/ETXCLK/RPD3/SCL3/RD3,ICSP,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
+52,SQICS0/RPD4/PMWR/RD4,MCLR,,×,×,9,Programming Pins
+53,SQICS1/RPD5/PMRD/RD5,PGD,,×,×,16,
+54,VDD,PGC,,×,×,15,
+55,VSS,,,,,,
+56,ERXD3/AETXD1/RPF0/RF0,INTERRUPTS,Description,Pin Selection Register,Pin Selection Value,Physical Pin,
+57,TRCLK/SQICLK/ERXD2/AETXD0/RPF1/RF1,INT0,UNUSED,×,×,×,
+58,TRD0/SQID0/ERXD1/PMD0/RE0,INT1,,INT1R,0011,46,
+59,VSS,INT2,UNUSED,×,×,×,
+60,VDD,INT3,,INT3R,0000,50,
+61,TRD1/SQID1/ERXD0/PMD1/RE1,INT4,,INT4R,0000,51,
+62,TRD2/SQID2/ERXDV/ECRSDV/AECRSDV/PMD2/RE2,,,,,,Probab gonna change processor and screen on rev 2 to support MIPI
 63,TRD3/SQID3/ERXCLK/EREFCLK/RPE3/PMD3/RE3,,,,,,
 64,AN18/ERXERR/PMD4/RE4,,,,,,PPS on pg 251
 ,,,,,,,
